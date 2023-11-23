@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,15 +7,51 @@
     <title>Portfolio</title>
   </head>
   <header>
+    <div class="navbar bg-base-100">
+      <div class="navbar-start">
+        <div class="dropdown dropdown-hover">
+          <label tabindex="0" class="btn btn-ghost btn-circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h7"
+              />
+            </svg>
+          </label>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-slate-700 rounded-box w-64"
+          >
+            <li><a>About</a></li>
+            <li><a>My Projects</a></li>
+            <li><a>Contact Links</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navbar-center">
+        <a class="btn btn-ghost text-xl">Kaelyn</a>
+      </div>
+      <div class="navbar-end">
+        <div class="badge badge-neutral">Version 1.0</div>
+      </div>
+    </div>
     <div
-      class="relative isolate flex items-center gap-x-6 overflow-hidden bg-gray-50 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
+      class="relative isolate flex items-center gap-x-6 overflow-hidden bg-base-200 px-6 py-2.5 sm:px-3.5 sm:before:flex-1"
     >
       <div
         class="absolute left-[max(-7rem,calc(50%-52rem))] top-1/2 -z-10 -translate-y-1/2 transform-gpu blur-2xl"
         aria-hidden="true"
       >
         <div
-          class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+          class="aspect-[577/310] w-[36.0625rem] bg-base-100 opacity-30"
           style="
             clip-path: polygon(
               74.8% 41.9%,
@@ -43,7 +79,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[577/310] w-[36.0625rem] bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-30"
+          class="aspect-[577/310] w-[36.0625rem] bg-base-200 opacity-30"
           style="
             clip-path: polygon(
               74.8% 41.9%,
@@ -66,10 +102,10 @@
           "
         ></div>
       </div>
-      <div class="flex flex-wrap items-center gap-x-4 gap-y-">
-        <p class="text-sm leading-6 text-gray-900">
+      <div class="flex flex-wrap items-center gap-x-4 gap-y-4">
+        <p class="text-sm leading-6 text-pink-300">
           <strong
-            class="font-extralight tracking-tight font-mono text-white bg-indigo-400 rounded-md p-1.5"
+            class="font-extralight tracking-tight font-mono text-white bg-primary rounded-md p-1.5"
             >In Development</strong
           ><svg
             viewBox="0 0 2 2"
@@ -81,33 +117,16 @@
           missing entirely.
         </p>
       </div>
-      <div class="flex flex-1 justify-end">
-        <button
-          type="button"
-          class="-m-3 p-3 focus-visible:outline-offset-[-4px]"
-        >
-          <span class="sr-only">Dismiss</span>
-          <svg
-            class="h-5 w-5 text-gray-900"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path
-              d="M6.28 5.22a.75.75 0 00-1.06 1.06L8.94 10l-3.72 3.72a.75.75 0 101.06 1.06L10 11.06l3.72 3.72a.75.75 0 101.06-1.06L11.06 10l3.72-3.72a.75.75 0 00-1.06-1.06L10 8.94 6.28 5.22z"
-            />
-          </svg>
-        </button>
-      </div>
+      <div class="flex flex-1 justify-end"></div>
     </div>
   </header>
   <body>
-    <div class="hero min-h-screen bg-base-200">
-      <div class="hero-content text-center">
+    <div class="hero min-h-screen">
+      <div class="hero-content rounded-xl text-center bg-slate-700 shadow-xl">
         <div class="max-w-md">
           <div class="avatar">
-            <div class="w-24 rounded-xl">
-              <img src="/assets/kaelyn.webp" />
+            <div class="w-24 rounded-md ring ring-pink-500">
+              <img src="assets/kaelyn.jpg" />
             </div>
           </div>
           <h1 class="text-5xl font-bold pt-2">Hi!</h1>
