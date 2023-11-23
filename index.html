@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="dark" scroll-smooth>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="public/output.css" />
-    <title>Portfolio</title>
+    <title>Kaelyn - Portfolio</title>
   </head>
   <header>
     <div class="navbar bg-base-100">
@@ -30,7 +30,7 @@
             tabindex="0"
             class="menu menu-sm dropdown-content z-[1] p-2 shadow bg-slate-700 rounded-box w-64"
           >
-            <li><a>About</a></li>
+            <li><a href="#about-me">About Me</a></li>
             <li><a>My Projects</a></li>
             <li><a>Contact Links</a></li>
           </ul>
@@ -112,8 +112,9 @@
             class="mx-2 inline h-0.5 w-0.5 fill-current"
             aria-hidden="true"
           >
-            <circle cx="1" cy="1" r="1" /></svg
-          >This webpage is under heavy construction. Content may be incorrect or
+            <circle cx="1" cy="1" r="1" />
+          </svg>
+          This webpage is under heavy construction. Content may be incorrect or
           missing entirely.
         </p>
       </div>
@@ -121,23 +122,101 @@
     </div>
   </header>
   <body>
-    <div class="hero min-h-screen">
-      <div class="hero-content rounded-xl text-center bg-slate-700 shadow-xl">
-        <div class="max-w-md">
-          <div class="avatar">
-            <div class="w-24 rounded-md ring ring-pink-500">
-              <img src="assets/kaelyn.jpg" />
+    <section
+      id="intro"
+      class="py-8 animate-in duration-1000 fade-in-0 zoom-in-0"
+    >
+      <div class="container mx-auto">
+        <div class="hero min-h-screen">
+          <div
+            class="hero-content rounded-xl text-center bg-slate-700 shadow-xl"
+          >
+            <div class="max-w-md">
+              <div class="avatar">
+                <div class="w-24 rounded-md ring ring-pink-500">
+                  <img src="assets/kaelyn.jpg" />
+                </div>
+              </div>
+              <h1 class="text-5xl font-bold pt-2">Hi!</h1>
+              <h2 class="text-3xl pb-4">
+                I'm <span class="text-pink-400 font-bold">Kaelyn</span>!
+              </h2>
+              <button class="btn btn-wide btn-primary font-bold">
+                What is this website?
+              </button>
             </div>
           </div>
-          <h1 class="text-5xl font-bold pt-2">Hi!</h1>
-          <h2 class="text-3xl pb-4">
-            I'm <span class="text-pink-400">Kaelyn</span>!
-          </h2>
-          <button class="btn btn-wide btn-primary">
-            What is this website?
-          </button>
         </div>
       </div>
-    </div>
+    </section>
+    <div class="divider divider-primary">About Me</div>
+    <section id="about-me" class="py-8 content-center justify-center">
+      <div class="flex container mx-auto max-w-7xl">
+        <article
+          class="prose lg:prose-xl prose-slate text-center max-w-none w-fit-content"
+        >
+          <h1>So, who am I?</h1>
+          <p>
+            I'm Kaelyn, a 21 year old developer based in Brighton, United
+            Kingdom. I never went to college or university for any sort of
+            development; I've always preferred learning on my own.
+          </p>
+          <p>
+            I took my first dive into this world when I was approximately 12,
+            learning ROBLOX's adaptation of Lua (Luau) for various small
+            projects. I met a lot of different people through ROBLOX, some
+            people I'm still inseprible from to this day.
+          </p>
+          <p>
+            One of the reasons I took the dive into development was because I
+            always found it fascinating, mainly because I was never a creative
+            person. I could never draw, I could never write, I could never do
+            anything that required creativity. I always found myself to be a
+            logical person, and I found that development was a great way to
+            express that.
+          </p>
+          <p>
+            I wouldn't go so far as to call myself a "professional", far from
+            it. I'm still learning, but I'm not the sort of person that learns
+            by reading tutorials, watching videos or even participating in
+            online courses. I learn by getting stuck in and doing the task. I've
+            always found it far more useful to make mistakes and have errors in
+            your code, because then you learn how to write code in that specific
+            language as well as valuable debugging skills.
+          </p>
+          <p>
+            Anyway, I think that's enough rambling by me; so I'll list out the
+            languages I know below.
+          </p>
+          <div class="grid place-content-center grid-flow-col gap-10">
+            <div class="card-compact bg-slate-800 rounded-md shadow-xl w-64">
+              <div class="card-body items-center">
+                <h1 class="card-title align-top">Lua</h1>
+                <div class="badge badge-secondary text-white">Experienced</div>
+              </div>
+            </div>
+            <div class="card-compact bg-slate-800 rounded-md shadow-xl w-64">
+              <div class="card-body items-center">
+                <h1 class="card-title align-top">CSharp</h1>
+                <div class="badge badge-secondary text-white">Experienced</div>
+              </div>
+            </div>
+            <div class="card-compact bg-slate-800 rounded-md shadow-xl w-64">
+              <div class="card-body items-center">
+                <h1 class="card-title align-top">JavaScript</h1>
+                <div class="badge badge-primary text-white">Beginner</div>
+              </div>
+            </div>
+            <div class="card-compact bg-slate-800 rounded-md shadow-xl w-auto">
+              <div class="card-body items-center">
+                <h1 class="card-title align-top">HTML & CSS</h1>
+                <div class="badge badge-secondary text-white">Experienced</div>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <div class="divider divider-primary">My Projects</div>
   </body>
 </html>
