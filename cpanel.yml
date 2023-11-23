@@ -1,12 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/dokkaeme/public_html/dev
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R node_modules $DEPLOYPATH
-    - /bin/cp -R public $DEPLOYPATH
-    - /bin/cp -R src $DEPLOYPATH
-    - /bin/cp -R cpanel.yml $DEPLOYPATH
-    - /bin/cp -R index.html $DEPLOYPATH
-    - /bin/cp -R main.js $DEPLOYPATH
-    - /bin/cp -R json $DEPLOYPATH
-    - /bin/cp -R js $DEPLOYPATH
+    - /bin cp * $DEPLOYPATH #copy all from root
