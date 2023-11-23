@@ -8,5 +8,8 @@ module.exports = {
     require("daisyui"),
     require("@tailwindcss/typography"),
     require("tailwindcss-animate"),
+    require("tailwind-fontawesome")({
+      version: 6,
+    }),
   ],
 };

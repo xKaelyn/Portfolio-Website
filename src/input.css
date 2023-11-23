@@ -8,3 +8,7 @@
 body {
   @apply text-white;
 }
+
+.smooth-scroll {
+  @apply transition-all duration-500 ease-in-out;
+}
